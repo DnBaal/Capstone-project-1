@@ -12,18 +12,18 @@ def index(request):
 class MenuItemView(generics.ListCreateAPIView):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
+    permission_classes = [IsAuthenticated]
     
 class SingleMenuItemView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
+    permission_classes = [IsAuthenticated]
     
     
 class BookingViewSet(viewsets.ModelViewSet):
     queryset = BookingItem.objects.all()
     serializer_class = BookingItemSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
+    permission_classes = [IsAuthenticated]
     
     
     
