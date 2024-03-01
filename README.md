@@ -1,8 +1,7 @@
 # LittleLemon
 
 ### api to test
-{
-/restaurant/menu-items
-/restaurant/menu-items/pk
-/restaurant/booking/tables
-}
+/restaurant/menu-items <br>
+/restaurant/menu-items/pk <br>
+/restaurant/booking/tables <br>
+
